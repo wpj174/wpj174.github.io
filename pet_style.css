@@ -1,0 +1,20 @@
+table {
+    border: solid 2pt brown;
+
+}
+
+caption {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+th {
+    padding: 10pt;
+    background-color: burlywood;
+}
+
+td {
+    padding: 10pt;
+    background-color: cornsilk;
+}
