@@ -16,5 +16,17 @@ th {
 
 td {
     padding: 10pt;
+}
+
+tr:nth-child(even) {
     background-color: cornsilk;
+}
+
+tr:nth-child(odd) {
+    background-color: lightyellow;
+}
+
+tr:hover {
+    background-color: darkgoldenrod;
+    font-weight: bold;
 }
