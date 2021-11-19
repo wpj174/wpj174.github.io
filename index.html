@@ -3,9 +3,78 @@
 <html>
   <head>
     <title>Bill's Home Page</title>
+    <style>
+      .navbar {
+        padding: 10px;
+        background: teal;
+      }
+
+      .navbar li {
+        display: inline-block;
+        padding: 25px;
+        background: gray;
+        border-radius: 3px;
+        margin: 10px;
+      }
+
+      .navbar li a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .select {
+        visibility: hidden;
+      }
+
+      @media (max-width: 600px) {
+        .navbar li {
+          padding: 10px;
+        }
+
+        .navbar ul {
+          visibility: hidden;
+        }
+
+        nav {
+          visibility: hidden;
+        }
+
+        .select {
+          visibility: visible;
+        }
+      }
+    </style>
   </head>
   
   <body>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="headings.html">Headings</a></li>
+        <li><a href="text_demo.html">Text</a></li>
+        <li><a href="lists.html">Lists 1</a></li>
+        <li><a href="lists2.html">Lists 2</a></li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="pet_style.css">Pets</a></li>
+        <li><a href="css_demo.html">CSS</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="bio.html">My Bio</a></li>
+      </ul>
+    </nav>
+
+    <select class="select" name="navSelect" onchange="location = this.value;">
+      <option value="home.html">Home</option>
+      <option value="headings.html">Headings</option>
+      <option value="text_demo.html">Text demo</option>
+      <option value="lists.html">List Demo 1</option>
+      <option value="lists2.html">List Demo 2</option>
+      <option value="tables.html">Tables CSS Demo</option>
+      <option value="pets.html">Pets Demo</option>
+      <option value="css_demo.html">CSS Text Demo</option>
+      <option value="travel.html">Embedded Data demo</option>
+      <option value="bio.html">Bio</option>
+    </select>
 
     <p>Welcome to my web site!</p>
     <br>
