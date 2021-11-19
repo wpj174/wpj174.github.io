@@ -13,6 +13,21 @@
             margin-right: auto;
             width: 50%;
         }
+
+        #imageHolder {
+            width: 400px;
+            height: 400px;
+            line-height: 400px;
+            background-color:#CCCCCC;
+        }
+
+        #imageHolder img {
+            max-width: 100%;
+            max-height:100%;
+            display: inline-block; /* Instead of display: block; */
+            margin: 0 auto;
+            vertical-align: middle;
+        }
     </style>
   </head>
   
@@ -20,7 +35,9 @@
 
     <h1>Bill Johnson</h1>>
 
-    <img src="/media/FB_Profile.jpg" title="Bill Johnson Profile Photo" class="center">
+    <div id="imageHolder">
+        <img src="/media/FB_Profile.jpg" title="Bill Johnson Profile Photo">
+    </div>
 
     <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam accusamus 
